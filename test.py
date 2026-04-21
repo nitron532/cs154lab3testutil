@@ -1,5 +1,4 @@
 import subprocess
-import os
 from pathlib import Path
 from ucsbcs154lab3_cpu import test
 
