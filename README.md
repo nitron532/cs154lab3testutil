@@ -56,3 +56,5 @@ Any added test files should have an answer section formatted like so:
 ```
 
 Then just run `python test.py` and it should loop through the `tests` directory and check each test inside.
+Note: The factorial test uses tabs to separate the factorial clarification comment.
+You can change the whitespace the parser searches for by modifying line 45 in `test.py`.
