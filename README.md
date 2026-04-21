@@ -5,11 +5,12 @@ The directory structure to run this should look like:
 .
 ├── tests/
 │   ├── factorial_test.s
-│   └── slt_test.s
+|   ├── slt_test.s
+│   └── any_other_tests.s ...
 |
-├──mips_to_hex.sh
+├── mips_to_hex.sh
 |
-├──i_mem_text_init.txt
+├── i_mem_text_init.txt
 |
 ├── test.py
 |
