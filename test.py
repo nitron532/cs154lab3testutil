@@ -47,7 +47,6 @@ for file in Path("tests").iterdir():
                 dmem, rf = test()
                 if len(expectedRegisters) > 0:
                     for regNum, val in rf.items():
-                        if(regNum == 26 or regNum == 27): continue
                         assert expectedRegisters[regNum] == val, f"Failed reg {regNum} in {file}. Expected value: {expectedRegisters[regNum]}, got value {val}"
 
                 if len(expectedMem) > 0:
