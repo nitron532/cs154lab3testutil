@@ -1,6 +1,7 @@
 # CS154 Lab3 Test Utility <hr>
 
 The directory structure to run this should look like:
+```
 .
 ├── tests/
 │   ├── factorial_test.s
@@ -13,9 +14,11 @@ The directory structure to run this should look like:
 ├── test.py
 |
 └── ucsbcs154lab4_cpu.py
+```
 
 Make sure somewhere in your `ucsbcs154lab4_cpu.py` you define the following `test()` function:
-`
+
+```
 def test():
    sim_trace = pyrtl.SimulationTrace()
 
@@ -40,6 +43,6 @@ def test():
       sim.inspect_mem(d_mem),
       sim.inspect_mem(rf),
    )
-`
+```
 This allows the `test.py` file to retrieve the outputs of the CPU in dictionary forms.
 Then just run `python test.py` and it should loop through the `tests` directory and check each test inside.
