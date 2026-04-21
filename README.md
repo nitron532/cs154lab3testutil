@@ -48,7 +48,7 @@ def test():
 This allows the `test.py` file to retrieve the outputs of the CPU in dictionary forms.
 When I submitted the CPU file I commented this out in case the gradescope tests will get mad at the definition.
 
-Any added test files should have an answer section formatted like so:
+Any added test files should have an answer section after the assembly code formatted like so:
 ```
 # ANSWER
 # mem[0] = 1
