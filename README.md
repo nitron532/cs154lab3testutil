@@ -55,7 +55,7 @@ Any added test files should have an answer section formatted like so:
 # $t1 = 2
 ```
 
-Then just run `python test.py` and it should loop through the `tests` directory and check each test inside.
+Then just run `python test.py` and it should loop through the `tests` directory and check each test inside. I ran this on CSIL.
 
 Note: The factorial test uses tabs to separate the factorial clarification comment.
 
