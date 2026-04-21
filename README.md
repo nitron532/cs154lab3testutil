@@ -46,4 +46,12 @@ def test():
    )
 ```
 This allows the `test.py` file to retrieve the outputs of the CPU in dictionary forms.
+
+Any added tests should have an answer section formatted like so:
+```
+# ANSWER
+# mem[0] = 1
+# $t1 = 2
+```
+
 Then just run `python test.py` and it should loop through the `tests` directory and check each test inside.
