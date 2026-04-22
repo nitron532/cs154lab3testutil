@@ -42,7 +42,7 @@ for file in Path("tests").iterdir():
                         expectedRegisters[mipsRegs[line[2:eq]]] = int(line[eq+3:])
                      elif line[2] == "m":
                         expectedMem[int(line[line.find("[")+1: line.find("]")])] = int(line[eq+3:line.find('\t', eq+3)])
-                       
+                if not foundAnswers: print(f"Didn't find answers section in {file}")
                 dmem, rf = test()
                 if len(expectedRegisters) > 0:
                     for regNum, val in rf.items():
