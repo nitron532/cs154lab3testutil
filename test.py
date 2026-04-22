@@ -39,8 +39,7 @@ for file in Path("tests").iterdir():
                         foundAnswers = True
                      eq = line.find("=") - 1
                      if line[2] == "$":
-                        value = line[eq+3:-1]
-                        expectedRegisters[mipsRegs[line[2:eq]]] = int(line[eq+3:-1])
+                        expectedRegisters[mipsRegs[line[2:eq]]] = int(line[eq+3:])
                      elif line[2] == "m":
                         expectedMem[int(line[line.find("[")+1: line.find("]")])] = int(line[eq+3:line.find('\t', eq+3)])
                        
